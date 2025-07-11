@@ -9,7 +9,7 @@ module.exports = defineConfig({
     setupNodeEvents(on) {
       on('file:preprocessor', cucumber())
     },
-    specPattern: 'cypress/e2e/**/*.{js,jsx,ts,tsx,feature}',
+    specPattern: 'cypress/e2e/feature/*.{js,jsx,ts,tsx,feature}',
     baseUrl: 'https://example.cypress.io',
   },
 })
